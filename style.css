@@ -1,0 +1,123 @@
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 0px;
+  position: relative;
+}
+
+header {
+  text-align: center;
+  color: white;
+  background-color: rgb(63, 76, 176);
+  padding: 5px;
+}
+
+/* h1の文字タイトル改行 */
+.newline {
+  display: inline-block;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /*中央揃えに変更*/
+  margin: 2rem 0rem;
+  gap: 15px; /* 間隔を追加 */
+}
+
+nav div {
+  background-color: #bf783a;
+  text-align: center;
+  padding: 0.5em 1em;
+  border-radius: 10px;
+  box-sizing: border-box;
+  width: 150px; /* 幅を固定 */
+  height: 55px; /* 高さを固定 */
+  display: flex; /* フレックスボックスを使用 */
+  align-items: center; /* 縦方向に中央揃え */
+  justify-content: center; /* 横方向に中央揃え */
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  display: block; /* クリック可能領域を広げるために追加 */
+  text-align: center;
+}
+
+.compare nav div {
+  background-color: #bf783a;
+}
+
+.title {
+  background-color: rgb(86, 158, 186);
+  color: white;
+  padding: 10px;
+  text-align: center;
+  /* display: inline-block; inline-blockに設定して幅を自動調整 */
+  /* width: auto; 幅を自動調整 */
+}
+
+/* 小タイトルと内容のスタイル */
+.p_indent {
+  text-indent: -3em;
+  padding-left: 3em;
+}
+
+h3 {
+  text-align: center;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+}
+
+/* フッター部分の波模様 */
+.wave {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.wave svg {
+  position: relative;
+  display: block;
+  width: calc(138% + 1.3px);
+  height: 129px;
+}
+
+.wave .shape-fill {
+  fill: #3f4cb0;
+}
+
+/* 端末サイズに応じたレイアウトの変更 */
+@media (min-width: 1000px) {
+  nav {
+    justify-content: flex-start; /* 固定幅なので中央揃え解除 */
+  }
+  nav div {
+    flex: 0 0 auto; /* 固定幅でフレックスボックスの影響を受けないようにする */
+  }
+}
+
+@media (max-width: 999px) and (min-width: 600px) {
+  nav {
+    justify-content: center; /* 画面サイズに応じて中央揃えに戻す */
+  }
+  nav div {
+    flex: 0 0 calc(33.33% - 15px); /* 横3 */
+  }
+}
+
+@media (max-width: 599px) {
+  nav div {
+    flex: 0 0 calc(50% - 15px); /* 横2 */
+  }
+}
