@@ -78,6 +78,11 @@ nav a {
   padding-left: 3em;
 }
 
+/* ヘッダー部分のタイトル改行 */
+.newline {
+  display: inline-block;
+}
+
 h3 {
   text-align: center;
 }
