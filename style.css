@@ -1,3 +1,4 @@
+/* ページ全体に関わるスタイル */
 body {
   font-family: "Zen Maru Gothic", serif;
   font-weight: 400;
@@ -9,18 +10,25 @@ body {
   position: relative;
 }
 
+.moji {
+  margin: 0 20px;
+}
+
+/* ヘッダー */
 header {
   text-align: center;
   color: white;
   background-color: rgb(63, 76, 176);
+  border-radius: 0 0 50px 50px;
   padding: 5px;
 }
 
-/* h1の文字タイトル改行 */
+/* ヘッダー部分のタイトル改行 */
 .newline {
   display: inline-block;
 }
 
+/* メニュー、目次 */
 nav {
   display: flex;
   flex-wrap: wrap;
@@ -50,20 +58,23 @@ nav a {
   text-align: center;
 }
 
+/* JavaScriptとPythonの比較_メニューボタン */
 .compare nav div {
   background-color: #bf783a;
 }
 
+/* 各メニューのタイトル */
 .title {
   background-color: rgb(86, 158, 186);
   color: white;
   padding: 10px;
   text-align: center;
+  border-radius: 25px 25px 0 0;
   /* display: inline-block; inline-blockに設定して幅を自動調整 */
   /* width: auto; 幅を自動調整 */
 }
 
-/* 小タイトルと内容のスタイル */
+/* 綺麗に改行するためのもの */
 .p_indent {
   text-indent: -3em;
   padding-left: 3em;
@@ -71,6 +82,23 @@ nav a {
 
 h3 {
   text-align: center;
+}
+
+.font_space {
+  line-height: 2;
+}
+
+/* 見出しにマーカー付ける */
+.marker {
+  /* background: linear-gradient(transparent 35%, #fcf69f 35%); */
+  background-color: #fcf69f;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* オレンジボタンの長いver */
+.long_ver {
+  width: 300px;
 }
 
 footer {
@@ -124,10 +152,16 @@ footer {
   h1 {
     font-size: 20px;
   }
+
   h2 {
     font-size: 18px;
   }
+
   h3 {
+    font-size: 16px;
+  }
+
+  .marker {
     font-size: 16px;
   }
 }
