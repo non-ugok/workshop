@@ -16,16 +16,12 @@ body {
 
 /* ヘッダー */
 header {
-  text-align: center;
   color: white;
-  background-color: rgb(63, 76, 176);
+  background-color: #bf783a;
+  text-align: center;
   border-radius: 0 0 50px 50px;
   padding: 5px;
-}
-
-/* ヘッダー部分のタイトル改行 */
-.newline {
-  display: inline-block;
+  /* background-color: rgb(63, 76, 176); */
 }
 
 /* メニュー、目次 */
@@ -39,6 +35,7 @@ nav {
 
 nav div {
   background-color: #bf783a;
+  /* background-color: rgb(86, 158, 186); */
   font-weight: bold;
   text-align: center;
   padding: 0.5em 1em;
@@ -65,7 +62,8 @@ nav a {
 
 /* 各メニューのタイトル */
 .title {
-  background-color: rgb(86, 158, 186);
+  /* background-color: rgb(86, 158, 186); */
+  background-color: rgb(63, 76, 176);
   color: white;
   padding: 10px;
   text-align: center;
@@ -98,7 +96,8 @@ h3 {
 
 /* オレンジボタンの長いver */
 .long_ver {
-  width: 300px;
+  width: 500px;
+  margin: auto;
 }
 
 footer {
@@ -122,7 +121,7 @@ footer {
 }
 
 .wave .shape-fill {
-  fill: #3f4cb0;
+  fill: #bf783a;
 }
 
 /* 端末サイズに応じたレイアウトの変更 */
@@ -142,11 +141,31 @@ footer {
   nav div {
     flex: 0 0 calc(33.33% - 15px); /* 横3 */
   }
+
+  nav .long_ver {
+    width: 800px;
+    margin: auto;
+    font-size: 16px; /* フォントサイズを小さくする */
+  }
+
+  nav .long_ver a {
+    white-space: nowrap; /* 改行を防ぐ */
+  }
 }
 
 @media (max-width: 599px) {
   nav div {
     flex: 0 0 calc(50% - 15px); /* 横2 */
+  }
+
+  nav .long_ver {
+    width: 700px;
+    margin: auto;
+    font-size: 14px;
+  }
+
+  nav .long_ver a {
+    white-space: nowrap; /* 改行を防ぐ */
   }
 
   h1 {
@@ -162,6 +181,6 @@ footer {
   }
 
   .marker {
-    font-size: 16px;
+    font-size: 15px;
   }
 }
