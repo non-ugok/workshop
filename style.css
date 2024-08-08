@@ -120,4 +120,14 @@ footer {
   nav div {
     flex: 0 0 calc(50% - 15px); /* 横2 */
   }
+
+  h1 {
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 18px;
+  }
+  h3 {
+    font-size: 16px;
+  }
 }
