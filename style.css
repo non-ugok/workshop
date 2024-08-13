@@ -115,15 +115,19 @@ nav div:hover a {
   padding: 5px 20px;
   display: inline-block;
   margin-top: 8px;
-  margin-bottom: 10px; /* ここで下部にスペースを追加 */
+  margin-bottom: 10px;
 }
 
 .step h3 {
   text-align: center;
-  font-size: 18px;
+  font-size: 20px;
   color: rgb(87, 99, 186);
   font-weight: bold;
   margin-bottom: 0;
+}
+
+.step p:first-child {
+  margin-top: 0;
 }
 
 /* 詳細と日程 */
@@ -138,7 +142,7 @@ nav div:hover a {
 
 .schedule h3 {
   text-align: center;
-  font-size: 18px;
+  font-size: 20px;
   color: #bf783a;
   font-weight: bold;
 }
@@ -153,20 +157,8 @@ nav div:hover a {
 
 .about h3 {
   color: rgb(87, 99, 186);
-}
-
-.about .long_ver {
-  background-color: rgb(219, 66, 148);
-}
-
-.about .long_ver:hover {
-  background-color: white;
-  border: solid 3px;
-  border-color: rgb(219, 66, 148);
-}
-
-.about .long_ver:hover a {
-  color: rgb(219, 66, 148);
+  font-size: 20px;
+  font-weight: bold;
 }
 
 /* 綺麗に改行するためのもの */
