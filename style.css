@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 
 /* ページ全体に関わるスタイル */
 body {
@@ -13,20 +16,6 @@ body {
 
 .moji {
   margin: 0 20px;
-}
-
-.schedule {
-  padding: 20px;
-  border: solid 4px;
-  border-color: #bf783a;
-  border-radius: 25px;
-  /* background-color: rgb(227, 227, 227); */
-}
-
-.schedule p:first-child {
-  text-align: center;
-  font-size: 18px;
-  font-weight: bold;
 }
 
 /* ヘッダー */
@@ -60,6 +49,7 @@ nav div {
   display: flex;
   align-items: center;
   justify-content: center;
+  scroll-behavior: smooth;
   transition: background-color 0.3s, color 0.3s; /* スムーズな反転効果のために追加 */
 }
 
@@ -74,7 +64,7 @@ nav a {
 /* ホバー時に背景色と文字色を反転させる */
 nav div:hover {
   background-color: white;
-  border: solid 4px;
+  border: solid 3px;
   border-color: #bf783a;
 }
 
@@ -85,7 +75,7 @@ nav div:hover a {
 /* JavaScriptとPythonの比較_メニューボタン */
 .compare nav div:hover {
   background-color: white;
-  border: solid 4px;
+  border: solid 3px;
   border-color: #bf783a;
 }
 
@@ -105,29 +95,7 @@ nav div:hover a {
   /* width: auto; 幅を自動調整 */
 }
 
-/* ワークショップ概要（STEP解説） */
-ul {
-  display: flex;
-  justify-content: space-around;
-  text-align: center;
-  padding: 0;
-}
-
-li {
-  width: 45%;
-  list-style: none;
-}
-
-li p {
-  margin-top: 0;
-  font-size: 120%;
-}
-
-img {
-  width: 70%;
-  min-width: 130px;
-}
-
+/* ワークショップの流れ */
 .step {
   /* background-color: rgb(227, 227, 227); */
   border: solid 4px;
@@ -145,6 +113,60 @@ img {
   font-weight: bold;
   border-radius: 15px;
   padding: 5px 20px;
+  display: inline-block;
+  margin-top: 8px;
+  margin-bottom: 10px; /* ここで下部にスペースを追加 */
+}
+
+.step h3 {
+  text-align: center;
+  font-size: 18px;
+  color: rgb(87, 99, 186);
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+/* 詳細と日程 */
+.schedule {
+  padding: 20px;
+  border: solid 4px;
+  border-color: #bf783a;
+  border-radius: 25px;
+  margin-bottom: 30px;
+  /* background-color: rgb(227, 227, 227); */
+}
+
+.schedule h3 {
+  text-align: center;
+  font-size: 18px;
+  color: #bf783a;
+  font-weight: bold;
+}
+
+/* p5.jsについて */
+.about {
+  padding: 20px;
+  border: solid 4px;
+  border-color: rgb(87, 99, 186);
+  border-radius: 25px;
+}
+
+.about h3 {
+  color: rgb(87, 99, 186);
+}
+
+.about .long_ver {
+  background-color: rgb(219, 66, 148);
+}
+
+.about .long_ver:hover {
+  background-color: white;
+  border: solid 3px;
+  border-color: rgb(219, 66, 148);
+}
+
+.about .long_ver:hover a {
+  color: rgb(219, 66, 148);
 }
 
 /* 綺麗に改行するためのもの */
