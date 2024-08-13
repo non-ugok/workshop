@@ -2,6 +2,30 @@ html {
   scroll-behavior: smooth;
 }
 
+/* ページトップへ戻るボタン */
+.pagetop {
+  height: 50px;
+  width: 50px;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  background: #fff;
+  border: solid 4px #757575;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.pagetop__arrow {
+  height: 10px;
+  width: 10px;
+  border-top: 3px solid #757575;
+  border-right: 3px solid #757575;
+  transform: translateY(20%) rotate(-45deg);
+}
+
 /* ページ全体に関わるスタイル */
 body {
   font-family: "Zen Maru Gothic", serif;
@@ -98,7 +122,7 @@ nav div:hover a {
 /* ワークショップの流れ */
 .step {
   /* background-color: rgb(227, 227, 227); */
-  border: solid 4px;
+  border: solid 5px;
   border-color: rgb(87, 99, 186);
   border-radius: 25px;
   padding: 20px;
@@ -133,7 +157,7 @@ nav div:hover a {
 /* 詳細と日程 */
 .schedule {
   padding: 20px;
-  border: solid 4px;
+  border: solid 5px;
   border-color: #bf783a;
   border-radius: 25px;
   margin-bottom: 30px;
@@ -150,7 +174,7 @@ nav div:hover a {
 /* p5.jsについて */
 .about {
   padding: 20px;
-  border: solid 4px;
+  border: solid 5px;
   border-color: rgb(87, 99, 186);
   border-radius: 25px;
 }
