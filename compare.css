@@ -26,6 +26,7 @@
 .python {
   position: relative;
   padding: 1rem 2rem;
+  font-weight: bold;
   color: block;
   border-radius: 0 10px 10px 10px;
   background: #e3f5d8;
@@ -36,6 +37,7 @@
 .python:before {
   font-size: 20px;
   font-size: 1.5rem;
+  font-weight: bold;
   position: absolute;
   top: -50px;
   left: 0;
@@ -51,6 +53,7 @@
 .JavaScript {
   position: relative;
   padding: 1rem 2rem;
+  font-weight: bold;
   color: block;
   border-radius: 0 10px 10px 10px;
   background: #edfce3;
@@ -61,6 +64,7 @@
 .JavaScript:before {
   font-size: 20px;
   font-size: 1.5rem;
+  font-weight: bold;
   position: absolute;
   top: -50px;
   left: 0;
@@ -75,11 +79,10 @@
 /* 文字の色を変える */
 .moji_red {
   color: #f93333;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
 /* マーカーを引く */
 .marker_yellow {
   background: linear-gradient(transparent 45%, #fcf69f 45%);
-  font-weight: bold;
 }
