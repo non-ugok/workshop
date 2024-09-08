@@ -28,14 +28,48 @@
     </header>
 
     <h2 class="title">変数</h2>
+
+    <div class="point">
+      <p>
+        変数とは簡単にいうと、「<span class="marker_blue"
+          >数値や文字などの値を入れられる領域</span
+        >」のことです。わかりやすくするため「値を入れられる箱」として、よく例えられます📦
+      </p>
+      <p>
+        Pythonで、変数を定義・代入するときの記法は以下の通りです。<br />[
+        <span class="marker_yellow">定義</span> ]　<span class="marker_blue"
+          >変数名 = 初期値</span
+        ><br />
+        [ <span class="marker_yellow">代入</span> ]　<span class="marker_blue"
+          >変数名 ＝ 代入したい値</span
+        >
+      </p>
+      <p>
+        それに対して、JavaScriptは…<br />[
+        <span class="marker_yellow">定義</span> ]　<span class="marker_blue"
+          >let　変数名 = 初期値 ;</span
+        ><br />
+        [ <span class="marker_yellow">代入</span> ]　<span class="marker_blue"
+          >変数名 ＝ 代入したい値 ;</span
+        >
+      </p>
+      <p>
+        Pythonの方が書き方がシンプルだな～という印象を受けたと思います💭<br />
+        JavaScriptでは<span class="marker_yellow"
+          >変数の宣言に「 let 」が必要で、行の末尾には「
+          ;（セミコロン）」を付ける必要</span
+        >があります。
+      </p>
+    </div>
+
     <div class="python">
       <span class="marker_yellow">dia = 60</span>　<span class="moji_red"
         >//定義</span
       ><br /><span class="marker_yellow">y = 80</span>　<span class="moji_red"
         >//定義</span
-      ><br />
+      ><br /><br />
       circle(100, y, dia)<br />
-      circle(200, y, dia)<br />
+      circle(200, y, dia)<br /><br />
       <span class="marker_yellow">y = 120</span>　<span class="moji_red"
         >//代入（変数ｙの値が120に上書き）</span
       ><br />circle(100, y, dia)<br />
@@ -43,18 +77,18 @@
     </div>
 
     <div class="JavaScript">
-      <span class="marker_yellow">let dia = 60;</span>　<span class="moji_red"
+      <span class="marker_yellow">let dia = 60 ;</span>　<span class="moji_red"
         >//定義</span
       ><br />
-      <span class="marker_yellow">let y = 80;</span>　<span class="moji_red"
+      <span class="marker_yellow">let y = 80 ;</span>　<span class="moji_red"
         >//定義</span
-      ><br />
-      circle(100, y, dia);<br />
-      circle(200, y, dia);<br />
-      <span class="marker_yellow">y = 120;</span>　<span class="moji_red"
+      ><br /><br />
+      circle(100, y, dia) ;<br />
+      circle(200, y, dia) ;<br /><br />
+      <span class="marker_yellow">y = 120 ;</span>　<span class="moji_red"
         >//代入（変数ｙの値が120に上書き）</span
-      ><br />circle(100, y, dia);<br />
-      circle(200, y, dia);
+      ><br />circle(100, y, dia) ;<br />
+      circle(200, y, dia) ;
     </div>
 
     <footer>
