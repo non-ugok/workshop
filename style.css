@@ -132,26 +132,35 @@ nav div:hover a {
 }
 
 .step_title {
-  background-color: rgb(86, 158, 186);
+  background-color: rgb(87, 99, 186);
   color: white;
   font-weight: bold;
-  border-radius: 15px;
+  border-radius: 25px;
   padding: 5px 20px;
   display: inline-block;
   margin-top: 8px;
   margin-bottom: 10px;
+  /* background-color: rgb(86, 158, 186); */
 }
 
 .step h3 {
   text-align: center;
-  font-size: 18px;
+  font-size: 24px;
   color: rgb(87, 99, 186);
   font-weight: bold;
   margin-bottom: 0;
 }
 
+h3 {
+  font-size: 24px;
+}
+
 .step p:first-child {
   margin-top: 0;
+}
+
+.center {
+  text-align: center;
 }
 
 /* 詳細と日程 */
@@ -166,7 +175,7 @@ nav div:hover a {
 
 .schedule h3 {
   text-align: center;
-  font-size: 18px;
+  font-size: 22px;
   color: #bf783a;
   font-weight: bold;
 }
@@ -182,8 +191,12 @@ nav div:hover a {
 
 .about h3 {
   color: rgb(87, 99, 186);
-  font-size: 18px;
+  font-size: 22px;
   font-weight: bold;
+}
+
+.font_p {
+  margin-top: 0;
 }
 
 /* 綺麗に改行するためのもの */
@@ -296,10 +309,35 @@ footer {
   }
 
   h3 {
+    font-size: 18px;
+  }
+
+  h3 span {
+    display: block;
+  }
+
+  .break-point::after {
+    content: "";
+    display: block;
+  }
+
+  .schedule h3 {
     font-size: 16px;
   }
 
+  .about h3 {
+    font-size: 16px;
+  }
+
+  .font_p {
+    font-size: 14px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
   .marker {
-    font-size: 15px;
+    font-size: 14px;
   }
 }
