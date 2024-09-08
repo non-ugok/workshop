@@ -32,6 +32,7 @@
   background: #e3f5d8;
   margin-top: 60px;
   line-height: 2;
+  margin-bottom: 70px;
 }
 
 .python:before {
@@ -59,6 +60,7 @@
   background: #edfce3;
   margin-top: 60px;
   line-height: 2;
+  margin-bottom: 20px;
 }
 
 .JavaScript:before {
@@ -85,4 +87,54 @@
 /* マーカーを引く */
 .marker_yellow {
   background: linear-gradient(transparent 45%, #fcf69f 45%);
+}
+
+/* マーカーを引く */
+.marker_blue {
+  background: linear-gradient(transparent 45%, rgb(189, 228, 243) 45%);
+}
+
+/* ポイント説明のスタイル */
+.point {
+  line-height: 2;
+  padding: 15px 20px;
+  border: solid 5px;
+  border-color: #bf783a;
+  border-radius: 15px;
+  margin-bottom: 70px;
+  margin: 0 20px;
+}
+
+@media (max-width: 599px) {
+  p {
+    font-size: 14px;
+  }
+
+  div {
+    font-size: 12px;
+  }
+
+  /* pythonのスタイル */
+  .python {
+    padding: 1rem 1rem;
+  }
+
+  .python:before {
+    font-size: 20px;
+    font-size: 1.2rem;
+    top: -40px;
+    height: 40px;
+  }
+
+  /* JavaScriptのスタイル */
+  .JavaScript {
+    padding: 1rem 1rem;
+  }
+
+  .JavaScript:before {
+    font-size: 20px;
+    font-size: 1.2rem;
+    top: -40px;
+    height: 40px;
+  }
 }
