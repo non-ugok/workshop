@@ -232,9 +232,27 @@ h3 {
   margin: auto;
 }
 
+/* その他の情報 部分 */
+.step_title2 {
+  background-color: rgb(86, 158, 186);
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 25px;
+  padding: 5px 20px;
+  display: inline-block;
+  margin-top: 8px;
+  margin-bottom: 10px;
+  /* background-color: rgb(86, 158, 186); */
+}
+
 footer {
   position: relative;
   width: 100%;
+}
+
+.foot {
+  text-align: right;
 }
 
 /* フッター部分の波模様 */
@@ -338,6 +356,10 @@ footer {
   }
 
   .marker {
+    font-size: 14px;
+  }
+
+  .step_title2 {
     font-size: 14px;
   }
 }
