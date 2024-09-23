@@ -1,5 +1,14 @@
+.container {
+  display: flex;
+  justify-content: space-between; /* 必要に応じてスペースを調整 */
+  gap: 20px; /* 要素間のスペースを調整 */
+  margin-top: 30px; /* 上下のマージンを調整 */
+}
+
 /* pythonのスタイル */
 .python {
+  width: 435px;
+  font-size: 14px;
   position: relative;
   padding: 1rem 2rem;
   font-weight: bold;
@@ -8,7 +17,7 @@
   background: #e3f5d8;
   margin-top: 60px;
   line-height: 2;
-  margin-bottom: 70px;
+  margin-bottom: 20px;
 }
 
 .python:before {
@@ -28,6 +37,8 @@
 
 /* JavaScriptのスタイル */
 .JavaScript {
+  width: 435px;
+  font-size: 14px;
   position: relative;
   padding: 1rem 2rem;
   font-weight: bold;
@@ -103,6 +114,7 @@
   /* pythonのスタイル */
   .python {
     padding: 1rem 1rem;
+    width: 100%; /* 幅を100%に変更 */
   }
 
   .python:before {
@@ -115,6 +127,7 @@
   /* JavaScriptのスタイル */
   .JavaScript {
     padding: 1rem 1rem;
+    width: 100%; /* 幅を100%に変更 */
   }
 
   .JavaScript:before {
@@ -122,5 +135,10 @@
     font-size: 1.2rem;
     top: -40px;
     height: 40px;
+  }
+
+  /* コンテナのスタイルを変更して上下に並ぶようにする */
+  .container {
+    display: block; /* 横並びから上下に変更 */
   }
 }
