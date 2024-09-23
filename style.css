@@ -155,6 +155,12 @@ h3 {
   font-size: 24px;
 }
 
+.title_p {
+  text-align: center;
+  color: #bf783a;
+  font-weight: bold;
+}
+
 .step p:first-child {
   margin-top: 0;
 }
