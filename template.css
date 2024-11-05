@@ -1,0 +1,27 @@
+.gif {
+  width: 40%;
+  display: block;
+  margin: 0 auto;
+}
+
+.title {
+  margin-bottom: 0;
+}
+
+.box {
+  text-align: center;
+  display: block;
+}
+
+.text {
+  line-height: 2;
+  margin: 0px 10px;
+  text-align: left;
+  display: inline-block;
+}
+
+@media (max-width: 599px) {
+  .gif {
+    width: 80%;
+  }
+}
